@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+    <!-- my stylesheet -->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montaga&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- javascript -->
+    <script
+      src="https://kit.fontawesome.com/b30322144e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-image"
+  style="
+    background-image: url('/image/dark-theme-19.jpg');
+    
+    background-size: 100vw 100vh;
+  ">
+      <!-- navigation bar -->
+   
+      <nav class="navbar navbar-inverse bg-dark">
+        <div class="container-fluid"></div>
+        <a class="nav-link disabled" href="#">ADMIN</a>
+        <a class="nav-link" href="/logout" style="color:white"><i class="fas fa-power-off"></i> Logout</a>
+        
+      </nav>
+
+      <p class="welcome_msg">Hello, <%= fname %> <%= lname %> !!!</p>
+
+      <!-- feature boxes -->
+      
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <a
+              href="/admin/stock"
+              class="button btn_feature"
+              ><i class="fas fa-laptop fa-2x"></i>
+              <p>Products</p></a
+            >
+          </div>
+
+          <div class="col">
+            <a
+              href="/admin/summary"
+              class="button btn_feature"
+              ><i class="fas fa-align-justify fa-2x"></i>
+              <p>Summary</p></a
+            >
+          </div>
+
+          <div class="col">
+            <a
+              href="/admin/eqprequests"
+              class="button btn_feature"
+              ><i class="fas fa-envelope-open-text fa-2x"></i>
+              <p>Requests</p></a
+            >
+          </div>
+          <div class="col">
+            <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Choose your supplier</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- Inner of modal -->
+                    <section class="text-gray-400 bg-gray-900 body-font relative">
+              <div class="container px-4 py-10 mx-auto" style="margin: 0 auto;">
+                <div class="flex flex-col text-center w-full mb-1">
+                  <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Select by clicking on your choice.</p>
+                </div>
+                <div class="lg:w-full md:w-full mx-auto">
+                  <div class="flex flex-wrap m-2">
+                    <div class="p-2 w-full">
+                      <div class="relative">
+                        <a href="https://www.flipkart.com/" target="_blank" class="btn btn-primary btn-lg w-full"><img src="https://static-assets-web.flixcart.com/www/promos/new/20150528-140547-favicon-retina.ico" style="display:inline;width:20px;margin-right:4px" > Flipkart</a>
+                      </div>
+                    </div>
+                    <div class="p-2 w-full">
+                      <div class="relative">
+                        <a href="https://www.amazon.in/" target="_blank" class="btn btn-warning btn-lg w-full"><i class="fab fa-amazon"></i> Amazon</a>
+                      </div>
+                    </div>
+                    <div class="p-2 w-full">
+                      <div class="relative">
+                        <a href="https://www.dell.com/en-in" target="_blank" class="btn btn-light btn-lg w-full"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Dell_Logo.svg/480px-Dell_Logo.svg.png" style="display:inline;width:23px;margin-right:4px"> DELL</a>
+                      </div>
+                    </div>
+                    <div class="p-2 w-full">
+                      <div class="relative">
+                        <a href="https://www.lenovo.com/in/en" target="_blank" class="btn btn-danger btn-lg w-full"><img src="https://logos-download.com/wp-content/uploads/2016/03/Lenovo_Logo_2015-700x233.png" style="width:85px;display:inline" ></a>
+                      </div>
+                    </div>
+                    <div class="p-2 w-full">
+                      <div class="relative">
+                        <a href="https://store.hp.com/in-en/default" target="_blank" class="btn btn-light btn-lg w-full"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/HP_logo_2012.svg/1200px-HP_logo_2012.svg.png" style="display:inline;width:23px;margin-right:4px" > HP</a>
+                      </div>
+                    </div>
+                    <div class="p-2 w-full">
+                      <div class="relative">
+                        <a type="button" class="btn btn-primary" href="https://www.bppimtinventory.tk/admin/purchase" target="_blank" >Required Items</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+                     
+                  </div>
+                </div>
+              </div>
+            </div>   
+            <a class="button btn_feature" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal4" ><i class="fas fa-cart-arrow-down fa-2x"></i>
+              <p>Purchase</p></a
+            >
+          </div>
+          <div class="col">
+            <a href="/admin/database" class="button btn_feature"
+              ><i class="fas fa-user-friends fa-2x"></i>
+              <p>Employees</p></a>
+          </div>
+        </div>
+        <div class="row">
+          
+
+          
+        </div>
+      </div>
+  </body>
+</html>

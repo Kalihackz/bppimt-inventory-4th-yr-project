@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <meta name="description" content="Registration Page of BPPIMT Inventory System.Login to continue">
+    <meta property="og:site_name" content="BPPIMT Inventory System Website">
+    <meta property="og:url" content="https://www.bppimtinventory.tk/">
+    <meta property="og:image" content="https://www.bppimtinventory.tk/image/college_logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"/>
+</head>
+<body class="bg-image"
+style="
+  background-image: url('/image/dark-theme-19.jpg');
+  background-size: 100vw 100vh;
+">
+    <section class="text-gray-400 body-font relative">
+        <div class="container px-5 py-24 mx-auto ">
+          <div class="flex flex-col text-center w-full mb-12">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Sign Up</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">In order to get access to the system you have to register with us or <a href="/login"><span style="color:cyan">Login</span></a></p>
+          </div>
+        <form method="POST" id="form">
+          <div class="lg:w-1/2 md:w-2/3 mx-auto bg-black bg-opacity-80" style="padding:10px">
+            <div class="flex flex-wrap -m-2">
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label for="fname" class="leading-7 text-sm text-gray-400">First Name</label>
+                  <input type="text" id="fname" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+              </div>
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label for="lname" class="leading-7 text-sm text-gray-400">Last Name</label>
+                  <input type="text" id="lname" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+              </div>
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label for="fname" class="leading-7 text-sm text-gray-400">Password</label>
+                  <input type="password" id="pass" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+              </div>
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label for="lname" class="leading-7 text-sm text-gray-400">Retype Password</label>
+                  <input type="password" id="repass" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+              </div>
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label for="lname" class="leading-7 text-sm text-gray-400">Email ID</label>
+                  <input type="email" id="email" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+              </div>
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label for="lname" class="leading-7 text-sm text-gray-400">Lab No.</label>
+                  <input type="text" id="lab_no" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+              </div>
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label for="message" class="leading-7 text-sm text-gray-400">Employee ID</label>
+                  <input type="text" id="employee_id" value="<%= emp_id %>" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700" style="color:white" disabled>
+                </div>
+              </div>
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label for="message" class="leading-7 text-sm text-gray-400">Designation</label>
+                  <input type="text" id="designation" value="<%= designation %>" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700" style="color:white" disabled>
+                </div>
+              </div>
+              <div class="p-2 w-full">
+                <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Sign Up</button>
+              </div>
+              <div class="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
+                <a class="text-indigo-400">B.P.P.I.M.T Inventory System</a>
+                <p class="leading-normal my-5">Hardware & Software System</p>
+              </div>
+            </div>
+          </div>
+         </form>
+        </div>
+       
+        <footer class="text-gray-400 body-font">
+              <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+                <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+                  <span class="material-icons">memory</span>
+                  <span class="ml-3 text-xl">Hardware & Software</span>
+                </a>
+                <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2021 Inventory System</p>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                  <a class="text-gray-400">
+                    Group 10
+                  </a>
+                </span>
+              </div>
+            </footer>
+      </section> 
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/signup.js"></script>
+</html>

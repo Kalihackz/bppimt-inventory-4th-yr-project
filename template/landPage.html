@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <title>BPPIMT Inventory</title>
+  <meta name="description" content="Landing Page of BPPIMT Inventory System.Login to continue">
+  <meta property="og:site_name" content="BPPIMT Inventory System Website">
+  <meta property="og:url" content="https://www.bppimtinventory.tk/">
+  <meta property="og:image" content="https://www.bppimtinventory.tk/image/college_logo.png">
+  <link rel="stylesheet" href="/css/login.css"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="/js/login.js"></script>
+  <script
+      src="https://kit.fontawesome.com/b30322144e.js"
+      crossorigin="anonymous"
+  ></script>
+
+</head>
+<body class="bgapply">
+  <form id="form" method="POST">
+  <section class="text-gray-400 body-font">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
+
+      <div class="lg:w-3/5 md:w-1/2 md:ml-auto w-full mt-10 md:mt-0" style="display:flex;flex-direction:column;align-items:center" >
+
+        <img class="logo" src="/image/college_logo.png" alt="College Logo" width="120" height="120 ">
+
+        <h1 class="big-heading text-white" style="text-align:center">B.P.P.I.M.T Inventory System</h1>
+        <p class="leading-relaxed  mt-4" style="text-align:center">Hardware & Software Inventory System</p>
+      </div>
+      
+      <div class="lg:w-2/6 md:w-1/2 bg-gray-800 bg-opacity-50 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+        <h1 class="text-white text-lg font-medium title-font mb-5" style="text-align:center">Log In </h1>
+        
+          <div class="relative mb-4">
+            <label for="full-name" class="leading-7 text-sm text-gray-400">Employee ID</label>
+            <input type="text" id="employee_id" name="employee_id" class="w-full bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-indigo-900 rounded border border-gray-600 focus:border-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
+          </div>
+          <div class="relative mb-4">
+            <label for="email" class="leading-7 text-sm text-gray-400">Password</label>
+            <input type="password" id="password" name="password" class="w-full bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-indigo-900 rounded border border-gray-600 focus:border-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
+          </div>
+          <!--style="color:red;font-size:15px"-->
+          <div id="wrong-user-pass" style="text-align:center;color:red;" ></div>
+          <button type="submit" class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Login</button>
+          </form>
+          <p class="text-xs mt-3" style="text-align:center">Don't have an account.<a href="/auth"><span style="color:cyan">Sign up here</span></a>.</p>
+          <p class="text-xs mt-3" style="text-align:center"><a href="/forget"><span style="color:red">Forgotten Password ?</span></a></p>
+      </div>
+      
+    </div>
+    <footer class="body-font footer-btm">
+      <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col" style="margin-bottom:0px">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+          <span class="material-icons">memory</span>
+          <span class="ml-3 text-xl">Hardware & Software</span>
+        </a>
+        <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2021 Inventory System</p>
+        <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4"><i class="fas fa-phone-alt"></i> Helpline : 0000 000 000</p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+          <a href="/team" class="text-gray-400">
+            About Group A 10
+          </a>
+        </span>
+      </div>
+    </footer>
+  </section>
+</body>
+
+</html>

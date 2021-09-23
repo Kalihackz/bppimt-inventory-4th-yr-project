@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forget Page</title>
+    <meta name="description" content="Forget Password Page of BPPIMT Inventory System.Login to continue">
+    <meta property="og:site_name" content="BPPIMT Inventory System Website">
+    <meta property="og:url" content="https://www.bppimtinventory.tk/forget">
+    <meta property="og:image" content="https://www.bppimtinventory.tk/image/college_logo.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body style="background-color:rgb(17 24 39 / 1)">
+    <section class="text-gray-400 bg-gray-900 body-font relative">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-12">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Reset Password</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">This page will help you to reset your password.
+                </p>
+            </div>
+
+            <form method="post" id="reset-pass">
+                <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                    <div class="flex flex-wrap -m-2">
+                        <div class="p-2 w-full">
+                            <div class="relative">
+                                <label for="message" class="leading-7 text-sm text-gray-400">Please read before you
+                                    proceed</label>
+                                <p id="message" name="message" style="text-align:center"
+                                    class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out">
+                                    <q>Dear user , <span style="color:yellow">please do not misuse</span> this password
+                                        resetting feature of the system else your ip will get blocked for 1 month.
+                                        Multiple violations will result in <span style="color:red">permanent
+                                            blacklisting of your ip , which can not be lifted</span>.
+                                    </q>
+                                </p>
+                                <p class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 h-20 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out">
+                                    <q>Dear user , <span style="color:yellow">Later you cannot change the password by your choice</span>.</q>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="p-2 w-full">
+                            <div class="relative" id="email-form">
+                                <label for="message" class="leading-7 text-sm text-gray-400">Enter registered Email ID :
+                                </label>
+                                <input type="email" id="email-reset" name="email-reset"
+                                    class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" />
+                            </div>
+                        </div>
+                        <div class="p-2 w-full center-align">
+                            <button type="submit" class="flex mx-auto waves-effect waves-light btn modal-trigger">Send Verification Code</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+        <footer class="text-gray-400 bg-gray-900 body-font">
+            <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+                <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+                    <span class="material-icons">memory</span>
+                    <span class="ml-3 text-xl">Hardward & Software</span>
+                </a>
+                <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">©
+                    2021 Inventory System</p>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                    <a href="/team" class="text-gray-400">
+                       About Group A 10
+                    </a>
+                </span>
+            </div>
+        </footer>
+    </section>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/forget.js"></script>
+
+</html>

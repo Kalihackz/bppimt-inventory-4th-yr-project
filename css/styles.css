@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+.welcome_msg {
+  font-size: 4rem;
+  padding: 2rem;
+  text-align: center;
+  font-family: "Montaga", serif;
+  color: white;
+}
+
+.button {
+  align-items: center;
+  background-color: #c3c4c5;
+  border: #e9e51a;
+  color: rgb(5, 5, 5);
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  box-shadow: 0 12px 16px 0 rgba(255, 251, 251, 0.24), 0 17px 50px 0 rgba(245, 245, 83, 0.19);
+}
+
+.btn_feature {
+  border-radius:10px;
+}
+
+.container {
+  margin: 5rem 50rem;
+}
+
+.button:hover {
+  background-color: rgb(252, 206, 0);
+}
+
+p {
+  font-size: larger;
+  font-family: "Montaga", serif;
+}
+
+.navbar{
+  padding: 0rem;
+}
+
+.row{
+ 
+  margin:4rem 0rem;
+  
+}
+
+.container{
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.container21{
+  position: relative;
+}
+
+.center{
+  margin:0;
+  position:relative;
+  left:50%;
+}

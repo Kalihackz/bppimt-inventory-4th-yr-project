@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.bgapply{
+    background-image: url("/image/dark-theme-19.jpg");
+    background-size: 100% 100%;
+ }
+ .big-heading {
+    font-family: 'Montserrat', sans-serif;
+     font-size: 3.5rem;
+     line-height: 1.5;
+   }
+ 
+   .container{
+       margin-bottom: 80px;
+   }
+
+   

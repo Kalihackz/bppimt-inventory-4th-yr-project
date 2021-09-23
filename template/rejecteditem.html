@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Required Items</title>
+    <!-- my stylesheet -->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" />
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montaga&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- javascript -->
+    <script
+      src="https://kit.fontawesome.com/b30322144e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/controlsAdmin.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </head>
+  <body class="bg-image"
+  style="
+    background-image: url('/image/dark-theme-19.jpg');
+    background-size: 100vw 100vh;
+  ">
+        <div name="modal_delete">
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Delete Entry</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- Inner of modal -->
+                    <section class="text-gray-400 bg-gray-900 body-font relative">
+              <div class="container px-4 py-10 mx-auto">
+                <div class="flex flex-col text-center w-full mb-1">
+                  <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Delete this particular entry.</p>
+                </div>
+                <div class="lg:w-full md:w-full mx-auto">
+                  <div class="flex flex-wrap m-2">
+                    
+                   
+                    <div class="p-2 w-full">
+                      <div class="relative text-center mx-auto">
+                        <label for="model" class="leading-7 text-sm text-gray-400">Are you sure you want to delete?</label>
+                            <a id="deleteRejected"
+                              class="btn btn-primary nav-link text-white" aria-expanded="false">YES</a>
+                            <a class="btn btn-danger nav-link text-white" data-bs-dismiss="modal">NO</a>
+                        <!-- </div> -->
+                    </div>       
+                  </div>
+                  
+                </div>
+              </div>
+            </section>
+                     
+                  </div>
+                </div>
+              </div>
+            </div>    
+        </div>
+
+      <!-- navigation bar -->
+      <nav class="navbar navbar-inverse bg-dark">
+        <div class="container-fluid"></div>
+        <a class="nav-link" href="/admin">HOME</a>
+        <a class="nav-link" href="/logout" style="color:white"><i class="fas fa-power-off"></i> Logout</a>
+      </nav>
+      <div> 
+
+        <header class="bg-white shadow">
+            <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                <h1 class="text-3xl font-bold leading-tight text-gray-900 text-center">
+                    Admin Panel - Required Items 
+                </h1>
+            </div>
+        </header>
+        <main> 
+            <input type="hidden" id="hiddendelete" >
+            <div class="mx-auto py-6 sm:px-6 lg:px-8">
+                <!-- Replace with your content -->
+                <div class="px-4 py-6 sm:px-0">
+                    <div class="border-4 border-gray-200 rounded-lg h-96 overflow-y-auto overflow-x-hidden">
+                        <!-- This example requires Tailwind CSS v2.0+ -->
+                        <div class="flex flex-col">
+                            <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                                <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+                                    <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+                                        <table class="min-w-full divide-y divide-gray-200">
+                                            <thead class="bg-gray-50">
+                                                <%- tableh %>
+                                            </thead>
+                                            <tbody class="bg-white divide-y divide-gray-200" id="table-data">
+                                              
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /End replace -->
+            </div>
+        </main>
+    </div>
+    <input type="hidden" id="modeVal" value="<%= mode %>" />
+      
+    <!-- body of this page needs to be filled here -->
+      
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="/js/controlsAdmin.js"></script>
+  <script>
+    function dataList(docs) {
+      var str='';
+      for(var i=0; i < docs.length; i++) {
+         str = str + `<%- tableb %> `;
+      }
+       document.getElementById('table-data').innerHTML=str;
+  }
+  
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</html>
